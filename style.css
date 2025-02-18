@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イラスト依頼代行チャットボット</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chatbot">
+        <h2>イラスト依頼代行チャットボット</h2>
+        <div id="chat-box"></div>
+        <button onclick="startChat()">チャットを開始</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #chatbot {
+        max-width: 400px;
+        padding: 20px;
+        border: 3px solid #2e604a;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    #chat-box {
+        min-height: 200px;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #eef5f3;
+        border-radius: 10px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    #chat-box::-webkit-scrollbar {
+        display: none;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        background-color: #2e604a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+        background-color: #1e4032;
+        transform: scale(1.05);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+</style>
+</html>
